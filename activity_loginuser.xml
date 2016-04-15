@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.thiyagu.myapplication.loginuserActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etusername"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="UserName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etpassword"
+        android:layout_below="@+id/etusername"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Password"
+        android:layout_alignRight="@+id/etusername"
+        android:layout_alignEnd="@+id/etusername" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/blogin"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/etpassword"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Register Here"
+        android:id="@+id/tvregisterhere"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/blogin"
+        android:layout_alignEnd="@+id/blogin" />
+
+</RelativeLayout>
